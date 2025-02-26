@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
+import Hamburger from "hamburger-react";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +30,7 @@ function Navbar() {
       >
         <div className="flex w-7xl justify-between items-center font-bold">
           <h2 className="text-2xl text-blue-300">&lt;Johnathan Aguilar/&gt;</h2>
-          <ul className="flex items-center space-x-4">
+          <ul className="hidden items-center space-x-4 md:flex">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -48,6 +50,9 @@ function Navbar() {
               <a href="#resume">Resume</a>
             </li>
           </ul>
+          <div className="block md:hidden">
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+          </div>
         </div>
       </nav>
       <div className="fixed bottom-0 flex w-full justify-center">
