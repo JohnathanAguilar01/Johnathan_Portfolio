@@ -29,7 +29,7 @@ function Navbar() {
               : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"
           }`}
         >
-          <div className="flex w-7xl justify-between items-center font-bold">
+          <div className="flex w-7xl justify-between items-center font-bold p-6">
             <h2 className="text-2xl text-blue-300">
               &lt;Johnathan Aguilar/&gt;
             </h2>
@@ -59,12 +59,12 @@ function Navbar() {
           </div>
         </nav>
         <div
-          className={`sticky top-0 w-screen transition-all duration-700 ease-in-out origin-top md:hidden p-6 
+          className={`sticky flex justify-center items-center top-0 w-screen transition-all duration-700 ease-in-out origin-top md:hidden p-6 
           ${isOpen ? "scale-y-100 opacity-100 h-auto" : "scale-y-0 opacity-0 h-0"}
           ${isScrolled ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12" : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"}
           `}
         >
-          <ul className="flex flex-col justify-center text-center w-screen space-y-6 font-extrabold">
+          <ul className="text-center space-y-6 font-extrabold">
             <li>
               <a href="#home">Home</a>
             </li>
