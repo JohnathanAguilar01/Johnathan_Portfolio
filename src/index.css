@@ -18,6 +18,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
+
 a:hover {
   filter: brightness(0.8);
 }
