@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar.tsx";
 import Home from "./components/Home.tsx";
 import About from "./components/About.tsx";
+import Footer from "./components/Footer.tsx";
+import Skills from "./components/Skills.tsx";
 
 function App() {
   return (
@@ -12,6 +14,10 @@ function App() {
       <section id="about">
         <About />
       </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <Footer />
     </>
   );
 }

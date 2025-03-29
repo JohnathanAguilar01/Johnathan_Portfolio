@@ -19,9 +19,24 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const links = [
+    { link: "#home", label: "Home" },
+    { link: "#about", label: "About" },
+    { link: "#skills", label: "Skills" },
+    { link: "#education", label: "Education" },
+    { link: "#projects", label: "Projects" },
+    { link: "#resume", label: "Resume" },
+  ];
+
+  const items = links.map((link) => (
+    <li>
+      <a href={link.link}>{link.label}</a>
+    </li>
+  ));
+
   return (
     <>
-      <div className="fixed">
+      <div className="fixed z-9000">
         <nav
           className={`flex justify-center top-0 left-0 w-screen transition-all duration-300 ${
             isScrolled
@@ -33,26 +48,7 @@ function Navbar() {
             <h2 className="text-2xl text-blue-300">
               &lt;Johnathan Aguilar/&gt;
             </h2>
-            <ul className="hidden items-center space-x-4 md:flex">
-              <li>
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#skills">Skills</a>
-              </li>
-              <li>
-                <a href="#education">Education</a>
-              </li>
-              <li>
-                <a href="#projects">Projects</a>
-              </li>
-              <li>
-                <a href="#resume">Resume</a>
-              </li>
-            </ul>
+            <ul className="hidden items-center space-x-4 md:flex">{items}</ul>
             <div className="block md:hidden">
               <Hamburger toggled={isOpen} toggle={setOpen} />
             </div>
@@ -64,26 +60,7 @@ function Navbar() {
           ${isScrolled ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12" : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"}
           `}
         >
-          <ul className="text-center space-y-6 font-extrabold">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#resume">Resume</a>
-            </li>
-          </ul>
+          <ul className="text-center space-y-6 font-extrabold">{items}</ul>
         </div>
 
         <div className="fixed bottom-0 flex w-full justify-center">
