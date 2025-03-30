@@ -3,6 +3,7 @@ import Home from "./components/Home.tsx";
 import About from "./components/About.tsx";
 import Footer from "./components/Footer.tsx";
 import Skills from "./components/Skills.tsx";
+import Education from "./components/Education.tsx";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
       </section>
       <section id="skills">
         <Skills />
+      </section>
+      <section id="education">
+        <Education />
       </section>
       <Footer />
     </>

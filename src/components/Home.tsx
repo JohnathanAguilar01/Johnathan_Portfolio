@@ -11,7 +11,7 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <div className="flex font-poppins justify-center items-center bg-[url('/background.gif')] bg-cover bg-center w-screen h-screen max-w-screen overflow-x-hidden p-4 rounded-b-4xl">
+      <div className="flex font-poppins justify-center items-center bg-[url('/desk.jpg')] bg-cover bg-center w-screen h-screen max-w-screen overflow-x-hidden p-4 rounded-b-4xl">
         <div className="flex flex-col">
           <div
             className={`transition-all duration-2000 ${
@@ -27,7 +27,10 @@ const Home: React.FC = () => {
               👋
             </h1>
             <h1 className="text-sm text-white font-bold inline ml-4">
-              Hi, I'm Johnathan Aguilar
+              Hi, I'm
+            </h1>
+            <h1 className="text-sm text-blue-300 font-bold inline ml-4">
+              Johnathan Aguilar
             </h1>
           </div>
           <h2
