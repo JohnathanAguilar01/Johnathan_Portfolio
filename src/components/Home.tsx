@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             <h1 className="text-sm text-white font-bold inline ml-4">
               Hi, I'm
             </h1>
-            <h1 className="text-sm text-blue-300 font-bold inline ml-4">
+            <h1 className="text-sm text-blue-300 font-bold md:inline ml-4">
               Johnathan Aguilar
             </h1>
           </div>

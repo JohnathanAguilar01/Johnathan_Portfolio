@@ -44,9 +44,11 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className="py-12 px-6 sm:px-12 lg:px-24 dark:bg-zinc-900 bg-zinc-100 rounded-4xl mt-8 bg-gradient-to-t from-blue-300/10 to-transparent">
-      <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
-      <div className="flex justify-center">
+    <div className="py-12 px-6 w-screen dark:bg-zinc-900 bg-zinc-100 rounded-4xl mt-8 bg-gradient-to-t from-blue-300/10 to-transparent">
+      <h2 className="text-3xl font-bold text-center mb-8 text-blue-300">
+        Skills
+      </h2>
+      <div className="flex justify-center flex-wrap">
         {skillsData.map((skillsData) => (
           <div className="flex flex-col items-center p-2 w-20 h-20">
             {skillsData.icon}

@@ -1,13 +1,13 @@
 function Education() {
   return (
     <>
-      <div className="flex px-72 py-24 justify-between w-screen">
+      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen md:flex-row md:px-64 ">
         <img
           className="object-scale-down size-auto"
           src="csun.png"
           alt="Profile Picture"
         />
-        <div className="max-w-2xl h-auto flex flex-col items-start justify-center">
+        <div className="max-w-2xl h-auto flex flex-col items-start justify-center mt-10 md:mb-0">
           <h2 className="text-3xl font-bold text-start text-blue-300 mb-4">
             Education
           </h2>
