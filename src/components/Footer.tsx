@@ -18,7 +18,7 @@ export default function FooterCentered() {
 
   return (
     <>
-      <footer className="mt-[120px] w-screen">
+      <footer className="md:mt-[120px] w-screen">
         <div
           className="
           flex justify-between items-center border-t border-t-[1px] h-32 m-10 w-auto"

@@ -1,8 +1,8 @@
 function About() {
   return (
     <>
-      <div className="flex px-64 py-24 justify-between w-screen">
-        <div className="max-w-2xl h-auto flex flex-col items-start justify-center">
+      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen md:flex-row md:px-64 ">
+        <div className="max-w-2xl h-auto flex flex-col items-start justify-center mb-10 md:mb-0">
           <h2 className="text-3xl font-bold text-start text-blue-300 mb-4">
             About Me
           </h2>
