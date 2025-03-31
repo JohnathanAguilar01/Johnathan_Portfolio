@@ -3,7 +3,7 @@ import ScrollAnimation from "./ScrollAnimation";
 function About() {
   return (
     <>
-      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-64 xl:px-32 ">
+      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-64 xl:px-32">
         <ScrollAnimation
           className="max-w-2xl h-auto flex flex-col items-center text-center xl:text-start xl:items-start xl:justify-center mb-10 xl:mb-0 xl:mr-10"
           delay={200}
@@ -26,7 +26,7 @@ function About() {
         </ScrollAnimation>
         <ScrollAnimation delay={200} translateBefore="translate-x-1/2">
           <img
-            className="size-100 rounded-2xl md:size-125"
+            className="size-100 rounded-2xl md:size-125 object-cover"
             src="profile_pic.jpg"
             alt="Profile Picture"
           />

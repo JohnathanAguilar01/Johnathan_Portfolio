@@ -20,6 +20,7 @@ import {
   SiJira,
   SiNeovim,
   SiQt,
+  SiRstudioide,
 } from "react-icons/si";
 
 const skillsData = [
@@ -30,6 +31,7 @@ const skillsData = [
   { name: "SQL", icon: <SiMysql size={40} /> },
   { name: "HTML", icon: <FaHtml5 size={40} /> },
   { name: "CSS", icon: <FaCss3Alt size={40} /> },
+  { name: "RStudio", icon: <SiRstudioide size={40} /> },
   { name: "LaTeX", icon: <SiLatex size={40} /> },
   { name: "React", icon: <FaReact size={40} /> },
   { name: "Express.js", icon: <SiExpress size={40} /> },
@@ -46,9 +48,11 @@ const skillsData = [
 const Skills = () => {
   return (
     <div className="py-12 px-6 w-screen dark:bg-zinc-900 bg-zinc-100 rounded-4xl mt-8 bg-gradient-to-t from-blue-300/10 to-transparent">
-      <h2 className="text-3xl font-bold text-center mb-8 text-blue-300">
-        Skills
-      </h2>
+      <ScrollAnimation delay={200} translateBefore="-translate-y-10">
+        <h2 className="text-3xl font-bold text-center mb-8 text-blue-300">
+          Skills
+        </h2>
+      </ScrollAnimation>
       <div className="flex justify-center flex-wrap">
         {skillsData.map((skill, index) => (
           <ScrollAnimation
