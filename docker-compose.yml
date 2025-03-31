@@ -1,3 +1,5 @@
+version: "3"
+
 services:
   web:
     build: .
@@ -8,9 +10,9 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-    #     networks:
-    #       - johnathanaguilar
-    #
-    # networks:
-    #   johnathanaguilar:
-    #     external: true
+    networks:
+      - johnathanaguilar
+
+networks:
+  johnathanaguilar:
+    external: true
