@@ -1,6 +1,8 @@
+import ScrollAnimation from "./ScrollAnimation";
+
 function Education() {
   return (
-    <>
+    <ScrollAnimation delay={200} translateBefore="translate-y-1/2">
       <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-64 xl:px-32 ">
         <img
           className="object-scale-down size-auto"
@@ -26,7 +28,7 @@ function Education() {
           </p>
         </div>
       </div>
-    </>
+    </ScrollAnimation>
   );
 }
 

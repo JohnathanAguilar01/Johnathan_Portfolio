@@ -1,3 +1,4 @@
+import ScrollAnimation from "./ScrollAnimation";
 import {
   FaJava,
   FaPython,
@@ -49,11 +50,15 @@ const Skills = () => {
         Skills
       </h2>
       <div className="flex justify-center flex-wrap">
-        {skillsData.map((skillsData) => (
-          <div className="flex flex-col items-center p-2 w-20 h-20">
-            {skillsData.icon}
-            <span className="mt-2 text-sm">{skillsData.name}</span>
-          </div>
+        {skillsData.map((skill, index) => (
+          <ScrollAnimation
+            key={skill.name}
+            delay={index * 100}
+            className="flex flex-col items-center p-2 w-20 h-20"
+          >
+            {skill.icon}
+            <span className="mt-2 text-sm">{skill.name}</span>
+          </ScrollAnimation>
         ))}
       </div>
     </div>
