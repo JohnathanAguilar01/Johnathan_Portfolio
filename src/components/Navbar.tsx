@@ -30,7 +30,9 @@ function Navbar() {
 
   const items = links.map((link) => (
     <li>
-      <a href={link.link}>{link.label}</a>
+      <a href={link.link} onClick={() => setOpen(false)}>
+        {link.label}
+      </a>
     </li>
   ));
 
@@ -55,8 +57,8 @@ function Navbar() {
           </div>
         </nav>
         <div
-          className={`sticky flex justify-center items-center top-0 w-screen transition-all duration-700 ease-in-out origin-top md:hidden p-6 
-          ${isOpen ? "scale-y-100 opacity-100 h-auto" : "scale-y-0 opacity-0 h-0"}
+          className={`sticky flex justify-center items-center top-0 w-screen md:hidden p-6 origin-top
+          ${isOpen ? "scale-y-100 opacity-100 h-auto transition-all duration-500 ease-in-out" : "scale-y-0 opacity-0 h-0"}
           ${isScrolled ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12" : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"}
           `}
         >
