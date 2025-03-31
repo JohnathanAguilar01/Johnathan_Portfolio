@@ -63,7 +63,10 @@ const Resume = () => {
         </ScrollAnimation>
       </ul>
       <ScrollAnimation delay={300} translateBefore="translate-x-1/2">
-        <button className="flex items-center gap-2 px-6 py-3 bg-blue-300 shadow-xl font-bold rounded-lg hover:brightness-75 hover:scale-125 transition delay-150 duration-300 ease-in-out my-10">
+        <button
+          className="flex items-center gap-2 px-6 py-3 bg-blue-300 shadow-xl font-bold rounded-lg hover:brightness-75 hover:scale-125 transition delay-150 duration-300 ease-in-out my-10"
+          onClick={handleDownload}
+        >
           <AiOutlineDownload className="size-6" />
           Resume
         </button>
