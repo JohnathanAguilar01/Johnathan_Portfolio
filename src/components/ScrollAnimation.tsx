@@ -1,10 +1,19 @@
 import { useEffect, useState, useRef } from "react";
 
-const ScrollAnimation = ({
+interface ScrollAnimationProps {
+  children: React.ReactNode;
+  className?: string;
+  delay?: number; // Optional delay for animations
+  veiwThreshold?: number;
+  translateBefore?: string;
+  translateAfter?: string;
+}
+
+const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
   children,
   className = "",
-  veiwThreshold = 0.2,
   delay = 0,
+  veiwThreshold = 0.2,
   translateBefore = "translate-y-10",
   translateAfter = "translate-y-0",
 }) => {
