@@ -15,7 +15,7 @@ const Resume = () => {
   };
 
   return (
-    <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-200 xl:px-32 ">
+    <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-200 xl:px-32">
       <ul className="flex flex-col items-start">
         <ScrollAnimation delay={200} translateBefore="-translate-x-1/2">
           <h2 className="text-3xl font-bold text-start text-blue-300 mb-4 ">

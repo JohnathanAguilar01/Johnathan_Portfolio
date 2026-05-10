@@ -1,9 +1,9 @@
 import ScrollAnimation from "./ScrollAnimation";
 
-function About() {
+function News() {
   return (
     <>
-      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-64 xl:px-32">
+      <div className="flex flex-col px-4 py-24 justify-between items-center w-screen dark:bg-zinc-900 bg-zinc-100 xl:flex-row 2xl:px-150 xl:px-32 ">
         <ScrollAnimation
           className="max-w-2xl h-auto flex flex-col items-center text-center xl:text-start xl:items-start xl:justify-center mb-10 xl:mb-0 xl:mr-10"
           delay={200}
@@ -36,4 +36,4 @@ function About() {
   );
 }
 
-export default About;
+export default News;

@@ -1,8 +1,8 @@
 import ScrollAnimation from "./ScrollAnimation";
 
-function Projects() {
+function Publications() {
   return (
-    <div className="flex flex-col justify-center items-center py-12 px-6 w-screen dark:bg-zinc-900 bg-zinc-100 rounded-4xl mt-8 bg-gradient-to-t from-blue-300/10 to-transparent">
+    <div className="flex flex-col justify-center items-center py-12 px-6 w-screen dark:bg-zinc-900 bg-zinc-100 mt-8">
       <ScrollAnimation delay={200} translateBefore="-translate-y-10">
         <h2 className="text-3xl font-bold text-start text-blue-300 mb-4 ">
           Projects
@@ -24,4 +24,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Publications;
