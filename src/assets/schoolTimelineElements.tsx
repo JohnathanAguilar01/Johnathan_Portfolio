@@ -1,4 +1,6 @@
-const schoolTimelineElements = [
+import { type TimelineItem } from "../components/Timeline";
+
+const schoolTimelineElements: TimelineItem[] = [
   {
     id: 1,
     title: "B.S. Computer Science, Minor in Data Science",
