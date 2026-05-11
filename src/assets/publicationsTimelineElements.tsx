@@ -1,4 +1,6 @@
-export const publicationsTimelineElements = [
+import { type TimelineItem } from "../components/Timeline";
+
+export const publicationsTimelineElements: TimelineItem[] = [
   {
     id: 1,
     title: "USC LA Geospatial Summit",

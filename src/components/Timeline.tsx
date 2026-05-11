@@ -1,9 +1,8 @@
-// components/SchoolTimeline.tsx
 import { FaGraduationCap, FaBookOpen, FaMicroscope } from "react-icons/fa";
 import { MdCoPresent } from "react-icons/md";
 import ScrollAnimation from "./ScrollAnimation";
 
-type TimelineItem = {
+export type TimelineItem = {
   id: number;
   title: string;
   location: string;
