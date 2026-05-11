@@ -27,7 +27,7 @@ function News() {
             translateBefore="translate-y-1/4"
           >
             <div className="rounded-xl border border-blue-300/20 bg-white/5 px-5 py-3 transition duration-300 hover:bg-white/10">
-              <div className="grid grid-cols-[160px_1fr] gap-4">
+              <div className="grid grid-cols-[120px_1fr] md:grid-cols-[160px_1fr] gap-4">
                 <h3
                   className={`text-base font-bold ${textAccentColor} md:text-lg`}
                 >

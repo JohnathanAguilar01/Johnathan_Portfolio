@@ -87,11 +87,9 @@ const Home: React.FC = () => {
 
             <div className="md:hidden m-4 text-left">
               <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
-                <div className="flex flex-row">
-                  <h2 className="text-3xl text-white font-bold inline">
-                    Hi, I'm
-                  </h2>
-                  <h2 className={`text-3xl ${textAccentColor} font-bold ml-2`}>
+                <div className="flex flex-col">
+                  <h2 className="text-3xl text-white font-bold">Hi, I'm</h2>
+                  <h2 className={`text-3xl ${textAccentColor} font-bold`}>
                     Johnathan Aguilar
                   </h2>
                 </div>
