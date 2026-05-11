@@ -2,6 +2,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ScrollAnimation from "./ScrollAnimation";
+import { textAccentColor, bgAccentColor } from "../assets/accentColor";
 
 const Resume = () => {
   // Function to handle download
@@ -18,7 +19,9 @@ const Resume = () => {
     <div className="flex flex-col px-4 py-24 justify-between items-center w-screen xl:flex-row 2xl:px-200 xl:px-32">
       <ul className="flex flex-col items-start">
         <ScrollAnimation delay={200} translateBefore="-translate-x-1/2">
-          <h2 className="text-3xl font-bold text-start text-blue-300 mb-4 ">
+          <h2
+            className={`text-3xl font-bold text-start ${textAccentColor} mb-4`}
+          >
             Contact
           </h2>
         </ScrollAnimation>
@@ -64,7 +67,7 @@ const Resume = () => {
       </ul>
       <ScrollAnimation delay={300} translateBefore="translate-x-1/2">
         <button
-          className="flex items-center gap-2 px-6 py-3 bg-blue-300 shadow-xl font-bold rounded-lg hover:brightness-75 hover:scale-125 transition delay-150 duration-300 ease-in-out my-10"
+          className={`flex items-center gap-2 px-6 py-3 ${bgAccentColor} shadow-xl font-bold rounded-lg hover:brightness-75 hover:scale-125 transition delay-150 duration-300 ease-in-out my-10`}
           onClick={handleDownload}
         >
           <AiOutlineDownload className="size-6" />
