@@ -26,7 +26,7 @@ const schoolTimelineElements: TimelineItem[] = [
     title: "GIS Research Assistant",
     location: "California State University, Northridge (CSUN)",
     description:
-      "NASA JPL Sponsored reseach on time-series clusturing &amp; remote sensing analysis",
+      "NASA JPL Sponsored reseach on time-series clusturing & remote sensing analysis",
     date: "OCT 2026-Present",
     type: "research",
     color: "blue",

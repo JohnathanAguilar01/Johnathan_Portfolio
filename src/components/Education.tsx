@@ -11,12 +11,6 @@ function Education() {
         delay={200}
         translateBefore="-translate-x-1/2"
       >
-        {/*
-        <p className="mb-2 text-sm font-semibold uppercase tracking-[0.25em] text-blue-400">
-          Academic Path
-        </p>
-        */}
-
         <h2
           className={`mb-4 text-start text-3xl font-bold ${textAccentColor} md:text-5xl`}
         >

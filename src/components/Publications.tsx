@@ -17,7 +17,7 @@ function Publications() {
       <div className="mb-10 mt-12 flex h-auto w-full max-w-2xl flex-col items-center text-center xl:mb-0 xl:mt-0 xl:ml-10 xl:w-1/2 xl:items-start xl:justify-center xl:text-start">
         <ScrollAnimation delay={200} translateBefore="translate-x-1/2">
           <h2
-            className={`mb-4 text-start text-3xl font-bold ${textAccentColor} md:text-5xl`}
+            className={`mb-4 text-center text-3xl font-bold ${textAccentColor} md:text-5xl md:text-start`}
           >
             Publications &amp; Presentations
           </h2>
