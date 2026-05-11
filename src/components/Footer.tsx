@@ -3,10 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function FooterCentered() {
   const links = [
     { link: "#home", label: "Home" },
-    { link: "#about", label: "About" },
-    { link: "#skills", label: "Skills" },
-    { link: "#education", label: "Education" },
-    { link: "#projects", label: "Projects" },
+    { link: "#news", label: "News" },
+    { link: "#education", label: "Education & Research" },
+    { link: "#pubs", label: "Publications & Presentations" },
     { link: "#resume", label: "Resume" },
   ];
 
@@ -18,10 +17,10 @@ export default function FooterCentered() {
 
   return (
     <>
-      <footer className="md:mt-[120px] w-screen">
+      <footer className="w-screen">
         <div
           className="
-          flex justify-between items-center border-t border-t-[1px] h-32 m-10 w-auto"
+          flex justify-between items-center border-t border-t-[1px] h-32 mx-10 my-0 w-auto"
         >
           <div className="flex space-x-4">
             <a
