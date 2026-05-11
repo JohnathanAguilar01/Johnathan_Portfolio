@@ -88,14 +88,14 @@ const Home: React.FC = () => {
             <div className="md:hidden m-4 text-left">
               <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
                 <div className="flex flex-col">
-                  <h2 className="text-3xl text-white font-bold">Hi, I'm</h2>
+                  <h2 className="text-3xl font-bold">Hi, I'm</h2>
                   <h2 className={`text-3xl ${textAccentColor} font-bold`}>
                     Johnathan Aguilar
                   </h2>
                 </div>
               </ScrollAnimation>
               <ScrollAnimation delay={300} translateBefore="translate-x-1/2">
-                <p className={"max-w-lg text-lg text-white mt-4 mb-4"}>
+                <p className={"max-w-lg text-lg mt-4 mb-4"}>
                   I am an incoming first-year M.S. in Computer Science student
                   at UMass Amherst, with a concentration in Data Science, and a
                   current NASA JPL intern. My research interests focus on

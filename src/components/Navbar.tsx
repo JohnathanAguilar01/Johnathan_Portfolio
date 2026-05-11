@@ -59,7 +59,7 @@ function Navbar() {
         <div
           className={`sticky flex justify-center items-center top-0 w-screen md:hidden p-6 origin-top
           ${isOpen ? "scale-y-100 opacity-100 h-auto transition-all duration-500 ease-in-out" : "scale-y-0 opacity-0 h-0"}
-          ${isScrolled ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12" : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"}
+          ${isScrolled ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12" : "bg-transparent bg-opacity-0 h-16 backdrop-blur-md"}
           `}
         >
           <ul className="text-center space-y-6 font-extrabold">{items}</ul>
@@ -67,7 +67,7 @@ function Navbar() {
 
         <div className="fixed bottom-0 flex w-full justify-center">
           {!isScrolled && (
-            <IoIosArrowDropdown className="size-10 m-3 animate-bounce text-white" />
+            <IoIosArrowDropdown className="size-10 m-3 animate-bounce" />
           )}
         </div>
       </div>
