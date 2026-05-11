@@ -8,7 +8,7 @@ const Resume = () => {
   // Function to handle download
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Johnathan_Aguilar_CV.pdf"; // Path to your PDF in the public folder
+    link.href = "/Johnathan_Acedemic_CV.pdf"; // Path to your PDF in the public folder
     link.download = "Johnathan_Aguilar_CV.pdf"; // File name when downloaded
     document.body.appendChild(link);
     link.click();
