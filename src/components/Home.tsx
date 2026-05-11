@@ -1,66 +1,142 @@
 // src/pages/Home.tsx
+import { MdEmail } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import React from "react";
-import { useEffect, useState } from "react";
+import ScrollAnimation from "./ScrollAnimation";
 
 const Home: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
     <>
-      <div className="flex font-poppins justify-center items-center bg-[url('/desk.jpg')] bg-cover bg-center w-screen h-screen max-w-screen overflow-x-hidden p-4 rounded-b-4xl">
-        <div className="flex flex-col">
-          <div
-            className={`transition-all duration-2000 ${
-              isVisible
-                ? "translate-x-0 opacity-100"
-                : "-translate-x-40 opacity-0"
-            }`}
-          >
+      <div className="relative flex font-poppins justify-center items-center w-screen h-screen max-w-screen overflow-x-hidden p-4">
+        <div className="absolute inset-0 bg-[url('/bg_image.jpg')] bg-cover bg-center opacity-10"></div>
+
+        <div className="relative flex flex-col md:flex-row font-poppins justify-center items-center z-10">
+          <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
+            <img
+              className="w-[200px] h-auto rounded-2xl mt-20 md:mt-0 md:w-[400px]"
+              src="Johnathan_Aguilar_Photo.jpg"
+              alt="Profile Picture"
+            />
+          </ScrollAnimation>
+          <div className="flex flex-col ml-8">
             <div className="hidden md:block">
-              <h1
-                className="text-sm inline-flex
-              animate-wiggle"
-              >
-                👋
-              </h1>
-              <h1 className="text-sm text-white font-bold inline ml-4">
-                Hi, I'm
-              </h1>
-              <h1 className="text-sm text-blue-300 font-bold md:inline ml-4">
-                Johnathan Aguilar
-              </h1>
-              <h2
-                className={`max-w-lg text-2xl text-white transition-all duration-2000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"} `}
-              >
-                I'm a senior Computer Science student at California State
-                University, Northridge, passionate about web development and
-                crafting user-friendly applications.
-              </h2>
+              <ScrollAnimation delay={500} translateBefore="-translate-y-40">
+                {/*
+                <h1
+                  className="text-sm inline-flex
+                  animate-wiggle"
+                >
+                  👋
+                </h1>
+                */}
+                <h1 className="text-sm font-bold inline">Hi, I'm</h1>
+                <h1 className="text-sm text-blue-300 font-bold md:inline ml-4">
+                  Johnathan Aguilar
+                </h1>
+              </ScrollAnimation>
+              <ScrollAnimation delay={500} translateBefore="translate-x-1/2">
+                <p className={"max-w-5xl text-lg font-bold mt-4 mb-4"}>
+                  I am an incoming first-year M.S. in Computer Science student
+                  at UMass Amherst, with a concentration in Data Science, and a
+                  current NASA JPL intern. My research interests focus on
+                  multimodal foundation models, computer vision, embodied AI,
+                  agentic AI, and applied machine learning systems. I am
+                  especially interested in problems that connect perception,
+                  reasoning, and real-world deployment.
+                  <br />
+                  <br />
+                  My recent work spans applied AI research in smart
+                  manufacturing, remote sensing, and computer vision. At CSUN, I
+                  have worked on projects involving vision-language models for
+                  industrial waste detection, OCR-to-knowledge-graph pipelines
+                  for facility analytics, multimodal retrieval-augmented
+                  generation, agentic AI assistants, and digital twin systems
+                  for safer and more efficient material recovery facilities. I
+                  have also conducted GIS and remote sensing research using
+                  satellite data to study environmental patterns across marine
+                  protected areas.
+                  <br />
+                  <br />
+                  More broadly, I enjoy building AI systems that are not only
+                  technically strong, but also practical, reliable, and useful
+                  in real-world settings. I am motivated by research that
+                  bridges machine learning, perception, reasoning, and
+                  deployment, and I hope to contribute to AI systems that can
+                  reason across modalities and support meaningful
+                  decision-making in complex environments.
+                </p>
+              </ScrollAnimation>
+
+              <ScrollAnimation delay={500} translateBefore="translate-y-40">
+                <div className="flex gap-4">
+                  <a href="mailto:johnathangaguilar@gmail.com">
+                    <MdEmail size={40} />
+                  </a>
+                  <a href="https://github.com/JohnathanAguilar01">
+                    <FaGithub size={40} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/johnathangaguilar/">
+                    <FaLinkedin size={40} />
+                  </a>
+                </div>
+              </ScrollAnimation>
             </div>
             <div className="md:hidden m-4">
-              <h2
-                className="text-3xl inline-flex
-              animate-wiggle"
-              >
-                👋
-              </h2>
-              <h2 className="text-3xl text-white font-bold inline ml-4">
-                Hi, I'm
-              </h2>
-              <h2 className="text-3xl text-blue-300 font-bold md:inline ml-4">
-                Johnathan Aguilar
-              </h2>
-              <h3
-                className={`max-w-lg text-xl text-white transition-all duration-2000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-40 opacity-0"} `}
-              >
-                I'm a senior Computer Science student at California State
-                University, Northridge, passionate about web development and
-                crafting user-friendly applications.
-              </h3>
+              <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
+                <div className="flex flex-row">
+                  <h2 className="text-3xl text-white font-bold inline">
+                    Hi, I'm
+                  </h2>
+                  <h2 className="text-3xl text-blue-300 font-bold md:inline ml-2">
+                    Johnathan Aguilar
+                  </h2>
+                </div>
+              </ScrollAnimation>
+              <ScrollAnimation delay={300} translateBefore="translate-x-1/2">
+                <p className={"max-w-lg text-lg text-white mt-4 mb-4"}>
+                  I am an incoming first-year M.S. in Computer Science student
+                  at UMass Amherst, with a concentration in Data Science, and a
+                  current NASA JPL intern. My research interests focus on
+                  multimodal foundation models, computer vision, embodied AI,
+                  agentic AI, and applied machine learning systems. I am
+                  especially interested in problems that connect perception,
+                  reasoning, and real-world deployment.
+                  <br />
+                  <br />
+                  My recent work spans applied AI research in smart
+                  manufacturing, remote sensing, and computer vision. At CSUN, I
+                  have worked on projects involving vision-language models for
+                  industrial waste detection, OCR-to-knowledge-graph pipelines
+                  for facility analytics, multimodal retrieval-augmented
+                  generation, agentic AI assistants, and digital twin systems
+                  for safer and more efficient material recovery facilities. I
+                  have also conducted GIS and remote sensing research using
+                  satellite data to study environmental patterns across marine
+                  protected areas.
+                  <br />
+                  <br />
+                  More broadly, I enjoy building AI systems that are not only
+                  technically strong, but also practical, reliable, and useful
+                  in real-world settings. I am motivated by research that
+                  bridges machine learning, perception, reasoning, and
+                  deployment, and I hope to contribute to AI systems that can
+                  reason across modalities and support meaningful
+                  decision-making in complex environments.
+                </p>
+              </ScrollAnimation>
+              <ScrollAnimation delay={300} translateBefore="translate-y-1/2">
+                <div className="flex gap-4">
+                  <a href="mailto:johnathangaguilar@gmail.com">
+                    <MdEmail size={40} />
+                  </a>
+                  <a href="https://github.com/JohnathanAguilar01">
+                    <FaGithub size={40} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/johnathangaguilar/">
+                    <FaLinkedin size={40} />
+                  </a>
+                </div>
+              </ScrollAnimation>
             </div>
           </div>
         </div>

@@ -21,10 +21,9 @@ function Navbar() {
 
   const links = [
     { link: "#home", label: "Home" },
-    { link: "#about", label: "About" },
-    { link: "#skills", label: "Skills" },
-    { link: "#education", label: "Education" },
-    { link: "#projects", label: "Projects" },
+    { link: "#news", label: "News" },
+    { link: "#education", label: "Education & Research" },
+    { link: "#pubs", label: "Publications & Presentations" },
     { link: "#resume", label: "Resume" },
   ];
 
