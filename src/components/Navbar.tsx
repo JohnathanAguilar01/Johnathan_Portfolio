@@ -2,14 +2,10 @@ import { useState, useEffect } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import Hamburger from "hamburger-react";
 import { textAccentColor } from "../assets/accentColor";
-import { FaMoon, FaSun } from "react-icons/fa";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false);
-  const [isDark, setIsDark] = useState(() => {
-    return localStorage.getItem("theme") === "dark";
-  });
 
   const links = [
     { link: "#home", label: "Home" },
@@ -39,20 +35,6 @@ function Navbar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    const root = document.documentElement;
-
-    if (isDark) {
-      root.style.colorScheme = "dark";
-      root.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      root.style.colorScheme = "light";
-      root.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDark]);
 
   return (
     <>
