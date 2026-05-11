@@ -1,23 +1,15 @@
 import { useState, useEffect } from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import Hamburger from "hamburger-react";
+import { textAccentColor } from "../assets/accentColor";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [isDark, setIsDark] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
 
   const links = [
     { link: "#home", label: "Home" },
@@ -35,6 +27,33 @@ function Navbar() {
     </li>
   ));
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+
+    if (isDark) {
+      root.style.colorScheme = "dark";
+      root.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.style.colorScheme = "light";
+      root.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDark]);
+
   return (
     <>
       <div className="fixed z-9000">
@@ -42,11 +61,11 @@ function Navbar() {
           className={`flex justify-center top-0 left-0 w-screen transition-all duration-300 ${
             isScrolled
               ? "bg-white dark:bg-zinc-900 bg-opacity-100 shadow-md h-12"
-              : "bg-transparent text-white bg-opacity-0 h-16 backdrop-blur-md"
+              : "bg-transparent bg-opacity-0 h-16 backdrop-blur-md"
           }`}
         >
           <div className="flex w-7xl justify-between items-center font-bold p-6">
-            <h2 className="text-2xl text-blue-300">
+            <h2 className={`text-2xl ${textAccentColor}`}>
               &lt;Johnathan Aguilar/&gt;
             </h2>
             <ul className="hidden items-center space-x-4 md:flex">{items}</ul>

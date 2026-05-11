@@ -1,6 +1,7 @@
 import { FaGraduationCap, FaBookOpen, FaMicroscope } from "react-icons/fa";
 import { MdCoPresent } from "react-icons/md";
 import ScrollAnimation from "./ScrollAnimation";
+import { textAccentColor, bgAccentColor } from "../assets/accentColor";
 
 export type TimelineItem = {
   id: number;
@@ -73,7 +74,7 @@ const Timeline: React.FC<TimelineProps> = ({ items, side = "both" }) => {
     <div className="relative w-full">
       {/* Vertical line */}
       <div
-        className={`absolute top-0 h-full w-[2px] bg-blue-200 ${linePosition()}`}
+        className={`absolute top-0 h-full w-[2px] ${bgAccentColor} ${linePosition()}`}
       />
 
       <div className="space-y-12">
@@ -88,7 +89,7 @@ const Timeline: React.FC<TimelineProps> = ({ items, side = "both" }) => {
             >
               {/* Icon node */}
               <div
-                className={`absolute top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-blue-600 text-white shadow-md ${iconPosition()}`}
+                className={`absolute top-6 z-10 flex h-10 w-10 items-center justify-center rounded-full border-4 border-white ${bgAccentColor} text-white shadow-md ${iconPosition()}`}
               >
                 {getIcon(item.type)}
               </div>
@@ -99,7 +100,9 @@ const Timeline: React.FC<TimelineProps> = ({ items, side = "both" }) => {
               >
                 {/* Text */}
                 <div className="min-w-0 flex-1">
-                  <p className="mb-1 text-sm font-semibold text-blue-600">
+                  <p
+                    className={`mb-1 text-sm font-semibold ${textAccentColor}`}
+                  >
                     {item.date}
                   </p>
 

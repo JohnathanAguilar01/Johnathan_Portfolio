@@ -3,22 +3,23 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import React from "react";
 import ScrollAnimation from "./ScrollAnimation";
+import { textAccentColor } from "../assets/accentColor";
 
 const Home: React.FC = () => {
   return (
     <>
-      <div className="relative flex font-poppins justify-center items-center w-screen h-screen max-w-screen overflow-x-hidden p-4">
+      <div className="relative flex font-poppins justify-center items-start md:items-center w-screen min-h-screen max-w-screen overflow-x-hidden p-4">
         <div className="absolute inset-0 bg-[url('/bg_image.jpg')] bg-cover bg-center opacity-10"></div>
 
-        <div className="relative flex flex-col md:flex-row font-poppins justify-center items-center z-10">
+        <div className="relative flex flex-col md:flex-row font-poppins justify-start md:justify-center items-center z-10 pt-20 md:pt-0">
           <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
             <img
-              className="w-[200px] h-auto rounded-2xl mt-20 md:mt-0 md:w-[400px]"
+              className="w-[200px] h-auto rounded-2xl md:w-[400px]"
               src="Johnathan_Aguilar_Photo.jpg"
               alt="Profile Picture"
             />
           </ScrollAnimation>
-          <div className="flex flex-col ml-8">
+          <div className="flex flex-col mt-6 md:mt-0 md:ml-8">
             <div className="hidden md:block">
               <ScrollAnimation delay={500} translateBefore="-translate-y-40">
                 {/*
@@ -30,7 +31,9 @@ const Home: React.FC = () => {
                 </h1>
                 */}
                 <h1 className="text-sm font-bold inline">Hi, I'm</h1>
-                <h1 className="text-sm text-blue-300 font-bold md:inline ml-4">
+                <h1
+                  className={`text-sm ${textAccentColor} font-bold md:inline ml-4`}
+                >
                   Johnathan Aguilar
                 </h1>
               </ScrollAnimation>
@@ -81,13 +84,14 @@ const Home: React.FC = () => {
                 </div>
               </ScrollAnimation>
             </div>
-            <div className="md:hidden m-4">
+
+            <div className="md:hidden m-4 text-left">
               <ScrollAnimation delay={500} translateBefore="-translate-x-1/2">
                 <div className="flex flex-row">
                   <h2 className="text-3xl text-white font-bold inline">
                     Hi, I'm
                   </h2>
-                  <h2 className="text-3xl text-blue-300 font-bold md:inline ml-2">
+                  <h2 className={`text-3xl ${textAccentColor} font-bold ml-2`}>
                     Johnathan Aguilar
                   </h2>
                 </div>
