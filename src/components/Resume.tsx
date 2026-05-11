@@ -7,8 +7,8 @@ const Resume = () => {
   // Function to handle download
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf"; // Path to your PDF in the public folder
-    link.download = "Johnathan_Aguilar_Resume.pdf"; // File name when downloaded
+    link.href = "/Johnathan_Aguilar_CV.pdf"; // Path to your PDF in the public folder
+    link.download = "Johnathan_Aguilar_CV.pdf"; // File name when downloaded
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
