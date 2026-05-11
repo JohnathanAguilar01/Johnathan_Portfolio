@@ -46,7 +46,7 @@ const schoolTimelineElements: TimelineItem[] = [
     id: 5,
     title: "M.S. Computer Science, Concentration in Data Science",
     location: "University of Massachusetts Amherst",
-    description: "GPA: 3.95/4.0",
+    description: "GPA:",
     date: "2026-Present",
     type: "school",
     color: "blue",
