@@ -47,4 +47,4 @@ export const publicationsTimelineElements: TimelineItem[] = [
   },
 ];
 
-export default publicationsTimelineElements;
+export default publicationsTimelineElements.reverse();

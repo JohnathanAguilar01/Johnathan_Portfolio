@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import React from "react";
 import ScrollAnimation from "./ScrollAnimation";
 import { textAccentColor } from "../assets/accentColor";
+import introduction from "../assets/introduction";
 
 const Home: React.FC = () => {
   return (
@@ -39,34 +40,7 @@ const Home: React.FC = () => {
               </ScrollAnimation>
               <ScrollAnimation delay={500} translateBefore="translate-x-1/2">
                 <p className={"max-w-5xl text-lg font-bold mt-4 mb-4"}>
-                  I am an incoming first-year M.S. in Computer Science student
-                  at UMass Amherst, with a concentration in Data Science, and a
-                  current NASA JPL intern. My research interests focus on
-                  multimodal foundation models, computer vision, embodied AI,
-                  agentic AI, and applied machine learning systems. I am
-                  especially interested in problems that connect perception,
-                  reasoning, and real-world deployment.
-                  <br />
-                  <br />
-                  My recent work spans applied AI research in smart
-                  manufacturing, remote sensing, and computer vision. At CSUN, I
-                  have worked on projects involving vision-language models for
-                  industrial waste detection, OCR-to-knowledge-graph pipelines
-                  for facility analytics, multimodal retrieval-augmented
-                  generation, agentic AI assistants, and digital twin systems
-                  for safer and more efficient material recovery facilities. I
-                  have also conducted GIS and remote sensing research using
-                  satellite data to study environmental patterns across marine
-                  protected areas.
-                  <br />
-                  <br />
-                  More broadly, I enjoy building AI systems that are not only
-                  technically strong, but also practical, reliable, and useful
-                  in real-world settings. I am motivated by research that
-                  bridges machine learning, perception, reasoning, and
-                  deployment, and I hope to contribute to AI systems that can
-                  reason across modalities and support meaningful
-                  decision-making in complex environments.
+                  {introduction}
                 </p>
               </ScrollAnimation>
 
@@ -95,36 +69,7 @@ const Home: React.FC = () => {
                 </div>
               </ScrollAnimation>
               <ScrollAnimation delay={300} translateBefore="translate-x-1/2">
-                <p className={"max-w-lg text-lg mt-4 mb-4"}>
-                  I am an incoming first-year M.S. in Computer Science student
-                  at UMass Amherst, with a concentration in Data Science, and a
-                  current NASA JPL intern. My research interests focus on
-                  multimodal foundation models, computer vision, embodied AI,
-                  agentic AI, and applied machine learning systems. I am
-                  especially interested in problems that connect perception,
-                  reasoning, and real-world deployment.
-                  <br />
-                  <br />
-                  My recent work spans applied AI research in smart
-                  manufacturing, remote sensing, and computer vision. At CSUN, I
-                  have worked on projects involving vision-language models for
-                  industrial waste detection, OCR-to-knowledge-graph pipelines
-                  for facility analytics, multimodal retrieval-augmented
-                  generation, agentic AI assistants, and digital twin systems
-                  for safer and more efficient material recovery facilities. I
-                  have also conducted GIS and remote sensing research using
-                  satellite data to study environmental patterns across marine
-                  protected areas.
-                  <br />
-                  <br />
-                  More broadly, I enjoy building AI systems that are not only
-                  technically strong, but also practical, reliable, and useful
-                  in real-world settings. I am motivated by research that
-                  bridges machine learning, perception, reasoning, and
-                  deployment, and I hope to contribute to AI systems that can
-                  reason across modalities and support meaningful
-                  decision-making in complex environments.
-                </p>
+                <p className={"max-w-lg text-lg mt-4 mb-4"}>{introduction}</p>
               </ScrollAnimation>
               <ScrollAnimation delay={300} translateBefore="translate-y-1/2">
                 <div className="flex gap-4">
