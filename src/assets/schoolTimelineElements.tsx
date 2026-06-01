@@ -2,17 +2,7 @@ import { type TimelineItem } from "../components/Timeline";
 
 const schoolTimelineElements: TimelineItem[] = [
   {
-    id: 1,
-    title: "B.S. Computer Science, Minor in Data Science",
-    location: "California State University, Northridge (CSUN)",
-    description: "GPA: 3.95/4.0",
-    date: "AUG 2023-MAY 2026",
-    type: "school",
-    color: "blue",
-    img_path: "csun.svg",
-  },
-  {
-    id: 2,
+    id: 0,
     title: "Smart Manufacturing Research",
     location: "CSUN ARCS Fellow & WM Intern",
     description: "Applied AI, computer vision, and digital twin systems",
@@ -22,7 +12,7 @@ const schoolTimelineElements: TimelineItem[] = [
     img_path: "wm-logo.png",
   },
   {
-    id: 3,
+    id: 1,
     title: "GIS Research Assistant",
     location: "California State University, Northridge (CSUN)",
     description:
@@ -33,7 +23,17 @@ const schoolTimelineElements: TimelineItem[] = [
     img_path: "csun.svg",
   },
   {
-    id: 4,
+    id: 2,
+    title: "B.S. Computer Science, Minor in Data Science",
+    location: "California State University, Northridge (CSUN)",
+    description: "GPA: 3.95/4.0",
+    date: "AUG 2023-MAY 2026",
+    type: "school",
+    color: "blue",
+    img_path: "csun.svg",
+  },
+  {
+    id: 3,
     title: "NASA JPL Summer Intern",
     location: "NASA Jet Propulsion Laboratory",
     description: "Deep learning research for SWOT sea-surface-height analysis",
@@ -43,7 +43,7 @@ const schoolTimelineElements: TimelineItem[] = [
     img_path: "jpl.png",
   },
   {
-    id: 5,
+    id: 4,
     title: "M.S. Computer Science",
     location: "University of California, Los Angeles",
     description: "GPA:",
@@ -54,4 +54,4 @@ const schoolTimelineElements: TimelineItem[] = [
   },
 ];
 
-export default schoolTimelineElements;
+export default schoolTimelineElements.reverse();
