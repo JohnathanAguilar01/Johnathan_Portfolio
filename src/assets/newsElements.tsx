@@ -2,7 +2,10 @@ const newsElements = [
   {
     id: 1,
     month: "May 2026",
-    bullets: ["Graduated from CSUN with a B.S. in Computer Science."],
+    bullets: [
+      "Graduated from CSUN with a B.S. in Computer Science.",
+      "Accepted to UCLA for the M.S. in Computer Science program.",
+    ],
   },
   {
     id: 2,

@@ -44,13 +44,13 @@ const schoolTimelineElements: TimelineItem[] = [
   },
   {
     id: 5,
-    title: "M.S. Computer Science, Concentration in Data Science",
-    location: "University of Massachusetts Amherst",
+    title: "M.S. Computer Science",
+    location: "University of California, Los Angeles",
     description: "GPA:",
-    date: "2026-Present",
+    date: "SEPT 2026-MAY 2028",
     type: "school",
     color: "blue",
-    img_path: "umass.png",
+    img_path: "UCLA_logo.webp",
   },
 ];
 
