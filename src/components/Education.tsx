@@ -20,7 +20,7 @@ function Education() {
         <p className="max-w-xl text-lg leading-relaxed">
           My academic path connects computer science, data science, and applied
           AI research, from undergraduate foundations at CSUN to graduate study
-          at UMass Amherst.
+          at UCLA.
         </p>
 
         <div className="mt-6 grid w-full max-w-xl grid-cols-1 gap-3 sm:grid-cols-2">
@@ -43,8 +43,7 @@ function Education() {
               Next Step
             </p>
             <p className="mt-1 text-sm">
-              Begin my M.S. at UMass Amherst and join a research lab as a
-              volunteer RA
+              Begin my M.S. at UCLA and join a research lab as a volunteer RA
             </p>
           </div>
 
